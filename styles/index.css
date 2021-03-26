@@ -1,0 +1,342 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: #161617;
+    color: white;
+    font-family: 'Baloo Bhai 2', cursive;
+    height: 1000px;
+}
+
+#header-img{
+    height: 80px;
+    width: 80px;
+    margin: 1rem;
+    padding: 1rem;
+    filter: invert(100%);
+}
+
+#header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    background-color: #161617;
+}
+
+#nav-bar ul li{
+    display: inline-block;
+    margin: 2rem;
+    padding: 0px 1rem;
+    font-size: 1.5rem;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: white;
+}
+
+.nav-link:hover{
+    text-decoration: underline;
+    color: #2997ff;
+}
+
+@media (max-width: 700px){
+    #header{
+        flex-direction: column;
+        align-content: space-around;
+        text-align: center;
+    }
+
+    #nav-bar ul li{
+        margin: 0px;
+    }
+
+    #header-img{
+        margin: 0px;
+    }
+}
+ 
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container h2{
+    font-size: 2.5rem;
+    margin: 1rem;
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+}
+
+ #form input{
+     width: 30vw;
+     margin: 0.6rem;
+     height: 2rem;
+     border-radius: 0.5rem;
+ }
+
+ #form [type="email"]{
+     padding: 1rem;
+ }
+
+ #form [type="submit"]{
+     cursor: pointer;
+     background-color:  #2997ff;;
+     font-size: 1rem;
+ }
+
+ #form [type="submit"]:hover{
+     background-color:#0369c9;;
+     transition: background-color 1s;
+ }
+
+ #form [placeholder]{
+     font-size: 1rem;
+ }
+
+ @media (max-width: 700px){
+     .container h2{
+         text-align: center;
+         font-size: 1.8rem;
+         margin-bottom: 0.5rem;
+     }
+
+     #form input{
+         width: 80vw;
+     }
+ }
+
+ @media(min-width: 700px) and (max-width: 1050px){
+    #form input{
+        width: 60vw;
+    }
+}
+
+ #feature{
+     margin: 3rem auto;
+     display: flex;
+     width: 70vw;
+ }
+
+ #feature .icon{
+     color: gray;
+ }
+
+ #feature [class="description"]{
+     color: white;
+ }
+ 
+ #feature h3{
+     font-size: 1.2rem;
+ }
+
+ #feature p{
+     font-size: 0.9rem;
+ }
+
+ #feature .group{
+     text-align: center;
+     margin: 0px 2rem;
+ }
+
+ #feature a{
+     text-decoration: none;
+     color: #2997ff;
+ }
+
+ @media (max-width: 700px){
+     #feature{
+         width: 80vw;
+         flex-wrap: wrap;
+         justify-content: center;
+         margin-top: 0rem;
+     }
+
+     #feature .group{
+        margin: 1.5rem auto;
+     }
+ }
+
+ @media (min-width: 700px) and (max-width: 1050px){
+     #feature{
+         width: 70vw;
+         flex-direction: column;  
+     }
+
+     #feature .group{
+        margin: 1rem auto;
+     }
+}
+
+#video{
+    display: flex;
+    justify-content: center;
+}
+
+#video > iframe{
+    max-width: 560px;
+  width: 90%;
+}
+
+#price{
+    width: 80vw;
+    margin: 3rem auto;
+    display: flex;
+}
+
+#airpods{
+    background-color: white;
+    color: black;
+    width: 50%;
+    text-align: center;
+    
+}
+
+#airpods h2{
+    font-size: 4rem;
+}
+
+#airpods a{
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #2997ff;
+}
+
+
+#airpods h3{
+    font-size: 3rem;
+    text-align: center;
+}
+
+#airpodspro{
+    background-color: black ;
+    color: white;
+    width: 50%;
+    text-align: center;
+}
+
+#airpodspro h2{
+    font-size: 4rem;
+}
+
+#airpodspro a{
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #2997ff;
+}
+
+#airpodspro h3{
+    margin-top: 9rem;
+    font-size: 3rem;
+    text-align: center;
+}
+
+#price img{
+    max-width: 100%;
+    height: auto;
+}
+
+.btn{
+    cursor: pointer;
+    color: white;
+    margin-bottom: 2rem;
+    width: 4rem;
+    background-color: #0071e3 ;
+    border-radius: 10px;
+    line-height: 2;
+    font-size: 1.2rem;
+    padding: 0px 8px;
+}
+
+.btn:hover{
+    background-color: #005ab4 ;
+}
+
+@media(max-width: 700px){
+    #price{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #airpods{
+        width: 80vw;
+    }
+
+    #airpods h2{
+        font-size: 2.5rem;
+    }
+
+    #airpods h3{
+        font-size: 2.5rem;
+    }
+
+    #airpodspro{
+        width: 80vw;
+    }
+
+    #airpodspro h2{
+        font-size: 2.5rem;
+    }
+    #airpodspro h3{
+        margin-top: 1rem;
+        font-size: 2.5rem;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 1000px){
+        #airpods h3{
+            margin-top: 8.5rem;
+        }
+
+        #airpodspro h2{
+            line-height: 1;
+        }
+}
+
+@media (min-width: 1000px) and (max-width: 1030px){
+     #airpods h3{
+         margin-top: 6rem;
+     }
+}
+
+.footer{
+    background-color: #222;
+}
+
+.footer #links{
+    width: 80vw;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#links p{
+    color: #6e6e73;
+}
+
+#links a{
+    text-decoration: none;
+    color: #6e6e73;
+}
+
+#links a:hover{
+    text-decoration: underline;
+    color: white;
+}
+
+#address{
+    color: #6e6e73;
+    text-align: center;
+}
